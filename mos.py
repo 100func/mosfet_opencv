@@ -68,7 +68,9 @@ def main():
         cv2.imshow('min',img1)
         cv2.imshow('max',img2)
         cv2.imshow('image', bgrResult)
-        
+    
+    filesavename = input('file save name:')
+    np.save(filesavename,np.array(bgrResult))
     print('min',min_r, min_g, min_b)
     print('min',max_r, max_g, max_b)
     cv2.destroyAllWindows()
