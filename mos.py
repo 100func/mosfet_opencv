@@ -14,10 +14,10 @@ def nothing(x):
 img1 = np.zeros((300,512,3), np.uint8)
 img2 = np.zeros((300,512,3), np.uint8)
 
-cv2.namedWindow('min')
-cv2.namedWindow('max')
+cv2.namedWindow('min',cv2.WINDOW_NORMAL)
+cv2.namedWindow('max',cv2.WINDOW_NORMAL)
 
-cv2.namedWindow('image')
+cv2.namedWindow('image',cv2.WINDOW_NORMAL)
 
 # create trackbars for color change
 cv2.createTrackbar('Min:R','min',0,255,nothing)
