@@ -1,0 +1,11 @@
+file save name:csl_drift
+min 0 0 0
+min 255 162 162
+
+file save name:gate
+min 192 21 24
+min 254 231 255
+
+file save name:hole_layer
+min 0 0 236
+min 255 255 252

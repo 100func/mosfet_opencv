@@ -4,3 +4,7 @@
 /ttt.py
 
 *.bmp
+
+*.npy
+
+*.csv

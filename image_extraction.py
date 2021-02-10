@@ -5,7 +5,7 @@ import numpy as np
 
 
 #img = cv2.imread('/Users/310_Tanaka_PC/Desktop/mosfet_opencv/mubai.bmp',cv2.IMREAD_COLOR)
-filename = '/Users/310_Tanaka_PC/Desktop/mosfet_opencv/mubai.bmp'
+filename = 'trimming/mubaiasu.bmp'
 
 def nothing(x):
     pass
@@ -69,11 +69,11 @@ def main():
         cv2.imshow('max',img2)
         cv2.imshow('image', bgrResult)
     
+    cv2.destroyAllWindows()
     filesavename = input('file save name:')
-    np.save(filesavename,np.array(bgrResult))
+    np.save('extraction_npy/'+filesavename,np.array(bgrResult))
     print('min',min_r, min_g, min_b)
     print('min',max_r, max_g, max_b)
-    cv2.destroyAllWindows()
 
 
 # BGRで特定の色を抽出する関数
