@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 file = 'convert_npy/csl_drift_convert.npy'
-data = np.load(file)
+data = np.loadtxt()
 hole_layer = np.zeros(data.shape,dtype=int)
 #121 111
 
@@ -24,3 +24,6 @@ for i in range(123,data.shape[0]):
 
 plt.imshow(hole_layer)
 plt.show()
+
+file_rename = file.replace('.npy','.csv').replace('extraction_npy/','convert_npy/') + '_convert'
+np.savetxt(file_rename,convert_data,delimiter=',',fmt='%d')
