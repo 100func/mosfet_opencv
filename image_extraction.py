@@ -4,7 +4,7 @@ import cv2
 import numpy as np
 
 
-#img = cv2.imread('/Users/310_Tanaka_PC/Desktop/mosfet_opencv/mubai.bmp',cv2.IMREAD_COLOR)
+#img = cv2.imread('!!!!data_path!!!!',cv2.IMREAD_COLOR)
 filename = 'trimming/mubaiasu.bmp'
 
 def nothing(x):
