@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-#/Users/310_Tanaka_PC/Desktop/mosfet_opencv/mubai.bmp
+
 import cv2
 import numpy as np
 
